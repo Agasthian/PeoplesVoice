@@ -13,8 +13,8 @@
         padding: 0 7rem;
       }
       &__para {
-        width: 67%;
-        text-align: justify;
+        width: 70%;
+        line-height: 2.8rem;
       }
     }
 
@@ -25,7 +25,7 @@
       flex-direction: column;
       justify-content: center;
       img {
-        width: 400px;
+        height: 55rem;
         border: 2rem $color-primary solid;
         position: absolute;
         right: 25rem;

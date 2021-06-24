@@ -4,16 +4,16 @@
   background-color: $color-text-dark;
 
   .cardWrapper {
-    margin-top: 4rem;
+    margin-top: 6rem;
 
     .services-card {
       perspective: 60rem;
       -moz-perspective: 60rem;
       position: relative;
-      width: 25rem;
-      height: 35rem;
+      width: 30rem;
+      height: 38rem;
       .side {
-        width: 25rem;
+        width: 30rem;
         height: 35rem;
         border-radius: 7px;
         margin: 0 2.5rem;
