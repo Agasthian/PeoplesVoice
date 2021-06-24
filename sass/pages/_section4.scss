@@ -12,24 +12,24 @@
         flex: 0 0 45%;
 
         img {
-          height: 45rem;
+          height: 55rem;
           position: absolute;
-          top: 10rem;
-          left: 30rem;
+          top: 3rem;
+          left: 22rem;
           border: 2rem #ad974f solid;
         }
       }
 
       .heading {
         background-color: $color-text-dark;
-        font-size: 6rem;
+        font-size: 8rem;
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
 
         h2 {
-          line-height: 9rem;
+          line-height: 11rem;
         }
       }
     }
