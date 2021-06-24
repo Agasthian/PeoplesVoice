@@ -1,0 +1,49 @@
+/******* SECTION 1 ********/
+/* Nav css imported from - layout/nav.scss*/
+/* Hero section*/
+.slider_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, $color-secondary, $color-primary);
+  background-image: url(../img/homebg.png);
+  height: 100%;
+  width: 100%;
+  z-index: -4;
+}
+.hero-wrapper {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    height: 60%;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0.7rem;
+      object-fit: cover;
+    }
+
+    &__text {
+      position: absolute;
+      top: 40%;
+      left: 30%;
+      text-align: center;
+      h2 {
+        color: $color-text-light;
+        font-size: 4rem;
+        font-weight: 400;
+      }
+      h2.headline {
+        font-size: 5rem;
+        font-weight: 700;
+        color: $color-primary;
+        z-index: 2;
+      }
+    }
+  }
+}

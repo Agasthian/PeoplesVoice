@@ -1,0 +1,35 @@
+/******* SECTION 2 ********/
+/* Sectionwrapper, container imported from layout.scss*/
+.s3 {
+  .about-wrapper {
+    display: flex;
+    height: 100vh;
+    background-color: $color-text-light;
+
+    &__content {
+      flex: 0 0 60%;
+
+      .aboutcontainer {
+        padding: 0 7rem;
+      }
+      &__para {
+        width: 67%;
+        text-align: justify;
+      }
+    }
+
+    &__img {
+      background-color: $color-secondary;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 400px;
+        border: 2rem $color-primary solid;
+        position: absolute;
+        right: 25rem;
+      }
+    }
+  }
+}

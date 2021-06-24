@@ -1,0 +1,36 @@
+/******* SECTION 5 ********/
+.s5 {
+  background-color: $color-text-light;
+
+  .project-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    // text
+    &__text {
+      font-size: 1.7rem;
+      text-align: center;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+    // slider
+    &__slider {
+      background-color: $color-secondary;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+
+      .project-slider {
+        &__img {
+          img {
+            width: 40rem;
+          }
+        }
+      }
+    }
+  }
+}

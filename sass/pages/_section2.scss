@@ -1,0 +1,110 @@
+/******* SECTION 2 ********/
+/* Sectionwrapper, container imported from layout.scss*/
+.s2 {
+  background-color: $color-text-dark;
+
+  .cardWrapper {
+    margin-top: 4rem;
+
+    .services-card {
+      perspective: 60rem;
+      -moz-perspective: 60rem;
+      position: relative;
+      width: 25rem;
+      height: 35rem;
+      .side {
+        width: 25rem;
+        height: 35rem;
+        border-radius: 7px;
+        margin: 0 2.5rem;
+        box-shadow: 0 1.5rem 4rem rgba($color: #000, $alpha: 0.25);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-in;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+
+        img {
+          margin-bottom: 1rem;
+          width: 10rem;
+          height: 10rem;
+        }
+        h3 {
+          color: $color-primary;
+          font-size: 2rem;
+          text-align: center;
+        }
+
+        &--front {
+          background-color: $color-secondary;
+        }
+        &--back {
+          background-color: #eaeaea;
+          transform: rotateY(180deg);
+
+          hr {
+            border: 1px solid $color-secondary;
+            width: 14rem;
+          }
+          h3 {
+            color: $color-secondary;
+          }
+          p {
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+          }
+        }
+      }
+
+      &:hover .side--front {
+        transform: rotateY(-180deg);
+      }
+
+      &:hover .side--back {
+        transform: rotateY(0deg);
+      }
+    }
+  }
+}
+
+// Backup old css
+// .s2 {
+//   background-color: $color-text-dark;
+
+//   .cardWrapper {
+//     margin-top: 4rem;
+
+//     .services-card {
+//       width: 25rem;
+//       height: 35rem;
+//       background-color: $color-secondary;
+//       border-radius: 7px;
+//       margin: 0 2.5rem;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       transition: all 0.8s;
+
+//       img {
+//         margin-bottom: 1rem;
+//         width: 10rem;
+//         height: 10rem;
+//       }
+//       h3 {
+//         color: $color-primary;
+//         font-size: 2rem;
+//       }
+
+//       &:hover {
+//         transform: rotateY(180deg);
+//       }
+//     }
+//   }
+// }

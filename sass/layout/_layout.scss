@@ -1,0 +1,18 @@
+/*Container*/
+.container {
+  max-width: 124rem;
+  padding: 0px 4rem;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.sectionwrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
