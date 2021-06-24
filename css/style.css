@@ -353,7 +353,8 @@ nav {
 .s4 .slide .section4wrapper {
   width: 100%;
   min-height: 100vh;
-  display: flex; }
+  display: flex;
+  position: relative; }
   .s4 .slide .section4wrapper .photo {
     background-color: #231f20;
     display: flex;
