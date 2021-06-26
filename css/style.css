@@ -346,15 +346,27 @@ nav {
     justify-content: center; }
     .s3 .about-wrapper__img img {
       height: 55rem;
-      border: 2rem #ad974f solid;
       position: absolute;
-      right: 25rem; }
+      right: 20rem; }
+  .s3 .about-wrapper__goldBG {
+    height: 59rem;
+    width: 21rem;
+    background-color: #ad974f;
+    position: absolute;
+    right: 54.5rem; }
 
 .s4 .slide .section4wrapper {
   width: 100%;
   min-height: 100vh;
   display: flex;
   position: relative; }
+  .s4 .slide .section4wrapper .goldBG {
+    height: 59rem;
+    width: 12rem;
+    background-color: #ad974f;
+    position: absolute;
+    left: 61.5rem;
+    top: 2rem; }
   .s4 .slide .section4wrapper .photo {
     background-color: #231f20;
     display: flex;
@@ -362,9 +374,8 @@ nav {
     .s4 .slide .section4wrapper .photo img {
       height: 55rem;
       position: absolute;
-      top: 3rem;
-      left: 22rem;
-      border: 2rem #ad974f solid; }
+      top: 4rem;
+      left: 18rem; }
   .s4 .slide .section4wrapper .heading {
     background-color: #e2e0e0;
     font-size: 8rem;

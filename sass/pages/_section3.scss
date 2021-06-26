@@ -26,10 +26,17 @@
       justify-content: center;
       img {
         height: 55rem;
-        border: 2rem $color-primary solid;
         position: absolute;
-        right: 25rem;
+        right: 20rem;
       }
+    }
+
+    &__goldBG {
+      height: 59rem;
+      width: 21rem;
+      background-color: #ad974f;
+      position: absolute;
+      right: 54.5rem;
     }
   }
 }
