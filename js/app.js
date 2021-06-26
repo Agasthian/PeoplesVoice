@@ -51,6 +51,7 @@
 $('.cardWrapper').slick({
   
   centerMode: true,
+  
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,

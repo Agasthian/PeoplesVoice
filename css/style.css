@@ -422,11 +422,13 @@ nav {
       flex-direction: column;
       justify-content: center;
       padding: 0px 4rem; }
-      .s6 .footer-wrapper__maps p {
+      .s6 .footer-wrapper__maps .info img {
+        width: 2rem;
+        margin-right: 2rem;
+        float: left; }
+      .s6 .footer-wrapper__maps .info p {
+        font-size: 1.4rem;
         margin-bottom: 2rem; }
-        .s6 .footer-wrapper__maps p img {
-          width: 2rem;
-          margin-right: 2rem; }
     .s6 .footer-wrapper__form {
       background-color: #eaeaea;
       width: 100%; }
