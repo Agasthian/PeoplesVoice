@@ -12,6 +12,7 @@
       padding: 0px 4rem;
 
       .info {
+        width: 100%;
         img {
           width: 2rem;
           margin-right: 2rem;
@@ -27,6 +28,10 @@
     &__form {
       background-color: $color-text-light;
       width: 100%;
+
+      h1 {
+        margin-bottom: 3rem;
+      }
 
       label {
         font-size: 1.6rem;
@@ -46,7 +51,7 @@
         font-size: 1.4rem;
         width: 100%;
         background-color: transparent;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
       }
       textarea {
         height: 5rem;
