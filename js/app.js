@@ -8,14 +8,19 @@
    onLeave: (origin, desitination, direction) =>{
      const section = desitination.item;
      const title = section.querySelector("h1");
+     const cardwrapper = document.querySelector('.cardWrapper');
+     const sectionpara = document.querySelector('.paraS3');
 
      const tl = new TimelineMax({ delay: 1 });
-     tl.fromTo( title, 0.5, {y:"50", opacity:0}, {y:"0", opacity:1});
+     tl.fromTo( title, 0.5, {y:"50", opacity:0}, {y:"0", opacity:1})
+      .fromTo( sectionpara, 0.5, {opacity:0, y:40}, {opacity:1, y:0}, '-=0.5')
 
      if(desitination.index === 1){
       const headline = document.querySelector('.hero-wrapper__content__text');
      
       tl.fromTo( headline,  0.5, {opacity: 0, y:40}, {opacity:1, y:0}, '-=0.5')
+        .fromTo(cardwrapper, 0.5, {opacity:0,y:60}, {opacity:1,y:0})
+        
      }
    }
  });
@@ -26,7 +31,9 @@
  const logo = document.querySelector('.logo_img');
  const hamburger = document.querySelector('.hamburger');
  const headline = document.querySelector('.hero-wrapper__content__text');
- const sectionpara = document.querySelector('.about-wrapper__content__para');
+ const sectionpara = document.querySelector('.paraS3');
+ 
+  
 
  const tl = new TimelineMax();
 
@@ -37,16 +44,19 @@
    .fromTo( hamburger,  0.5, {opacity: 0, x:30}, {opacity:1, x:0}, '-=0.5')
    .fromTo( headline,  0.5, {opacity: 0, y:40}, {opacity:1, y:0}, '-=0.5')
    .fromTo( sectionpara, 0.5, {opacity:0, y:40}, {opacity:1, y:0}, '-=0.5')
+   
+   
 
 // ************* Slick Library *************
 $('.cardWrapper').slick({
   
   centerMode: true,
-  
+  centerPadding: '60px',
   slidesToShow: 3,
   slidesToScroll: 1,
   dots: true,
-   focusOnSelect: true
+  focusOnSelect: true,
+   
   
 });
 
@@ -55,5 +65,8 @@ $('.project-slider').slick({
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
+  autoplay:true,
+  autoplaySpeed:2500,
+  speed: 1000,
   
 });

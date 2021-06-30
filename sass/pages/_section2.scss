@@ -4,20 +4,20 @@
   background-color: $color-text-dark;
 
   .cardWrapper {
-    margin-top: 6rem;
+    margin-top: 1rem;
 
     .services-card {
       perspective: 60rem;
       -moz-perspective: 60rem;
       position: relative;
       width: 30rem;
-      height: 38rem;
+      height: 44rem;
       .side {
         width: 30rem;
         height: 35rem;
         border-radius: 7px;
-        margin: 0 2.5rem;
-        box-shadow: 0 1.5rem 4rem rgba($color: #000, $alpha: 0.25);
+        margin: 5rem 2.5rem;
+        box-shadow: 0 0.5rem 1.5rem rgba($color: #000, $alpha: 0.5);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -47,8 +47,11 @@
           transform: rotateY(180deg);
 
           hr {
-            border: 1px solid $color-secondary;
             width: 14rem;
+            height: 1px;
+            border: none;
+            color: $color-secondary;
+            background-color: #333;
           }
           h3 {
             color: $color-secondary;

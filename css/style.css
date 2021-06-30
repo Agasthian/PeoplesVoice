@@ -28,6 +28,17 @@ nav {
 h1 {
   font-size: 4rem; }
 
+.slick-prev:before,
+.slick-next:before {
+  font-size: 24px !important;
+  color: #231f20 !important; }
+
+.slick-next {
+  right: -35px !important; }
+
+.slick-prev {
+  left: -40px !important; }
+
 .btn, .btn:link, .btn:visited {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -186,7 +197,7 @@ nav {
       position: fixed;
       top: 0;
       right: 0;
-      width: 30%;
+      width: 35%;
       height: 100%;
       visibility: hidden;
       overflow: hidden;
@@ -194,7 +205,7 @@ nav {
       align-items: center; }
       nav .hamburger_wrap .menu div {
         background-color: #eaeaea;
-        width: 30vw;
+        width: 35vw;
         height: 100vh;
         display: flex;
         flex: none;
@@ -208,9 +219,12 @@ nav {
           font-size: 2.5rem;
           font-weight: bold;
           padding: 1rem; }
-          nav .hamburger_wrap .menu div ul li a {
-            text-decoration: none;
-            color: inherit; }
+          nav .hamburger_wrap .menu div ul li {
+            padding-bottom: 1.5rem;
+            font-size: 3.3rem; }
+            nav .hamburger_wrap .menu div ul li a {
+              text-decoration: none;
+              color: inherit; }
 
 /*Container*/
 .container {
@@ -257,7 +271,7 @@ nav {
       object-fit: cover; }
     .hero-wrapper__content__text {
       position: absolute;
-      top: 33%;
+      top: 31%;
       left: 24%;
       text-align: center; }
       .hero-wrapper__content__text h2 {
@@ -268,26 +282,28 @@ nav {
         font-size: 8rem;
         font-weight: 700;
         color: #ad974f;
-        z-index: 2; }
+        z-index: 2;
+        line-height: 8rem;
+        margin-bottom: 5rem; }
 
 /******* SECTION 2 ********/
 /* Sectionwrapper, container imported from layout.scss*/
 .s2 {
-  background-color: #e2e0e0; }
+  background-color: #e1e0e0; }
   .s2 .cardWrapper {
-    margin-top: 6rem; }
+    margin-top: 1rem; }
     .s2 .cardWrapper .services-card {
       perspective: 60rem;
       -moz-perspective: 60rem;
       position: relative;
       width: 30rem;
-      height: 38rem; }
+      height: 44rem; }
       .s2 .cardWrapper .services-card .side {
         width: 30rem;
         height: 35rem;
         border-radius: 7px;
-        margin: 0 2.5rem;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+        margin: 5rem 2.5rem;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.5);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -311,8 +327,11 @@ nav {
           background-color: #eaeaea;
           transform: rotateY(180deg); }
           .s2 .cardWrapper .services-card .side--back hr {
-            border: 1px solid #231f20;
-            width: 14rem; }
+            width: 14rem;
+            height: 1px;
+            border: none;
+            color: #231f20;
+            background-color: #333; }
           .s2 .cardWrapper .services-card .side--back h3 {
             color: #231f20; }
           .s2 .cardWrapper .services-card .side--back p {
@@ -353,7 +372,9 @@ nav {
     width: 21rem;
     background-color: #ad974f;
     position: absolute;
-    right: 54.5rem; }
+    right: 54.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; }
 
 .s4 .slide .section4wrapper {
   width: 100%;
@@ -366,7 +387,9 @@ nav {
     background-color: #ad974f;
     position: absolute;
     left: 61.5rem;
-    top: 2rem; }
+    top: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
   .s4 .slide .section4wrapper .photo {
     background-color: #231f20;
     display: flex;
@@ -377,7 +400,7 @@ nav {
       top: 4rem;
       left: 18rem; }
   .s4 .slide .section4wrapper .heading {
-    background-color: #e2e0e0;
+    background-color: #e1e0e0;
     font-size: 8rem;
     display: flex;
     width: 100%;
@@ -454,6 +477,9 @@ nav {
         width: 100%;
         background-color: transparent;
         margin-bottom: 4rem; }
+        .s6 .footer-wrapper__form input:focus,
+        .s6 .footer-wrapper__form textarea:focus {
+          outline: none; }
       .s6 .footer-wrapper__form textarea {
         height: 5rem; }
 

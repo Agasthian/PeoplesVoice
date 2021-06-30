@@ -110,7 +110,7 @@ nav {
       position: fixed;
       top: 0;
       right: 0;
-      width: 30%;
+      width: 35%;
       height: 100%;
       visibility: hidden;
       overflow: hidden;
@@ -119,7 +119,7 @@ nav {
 
       div {
         background-color: $color-text-light;
-        width: 30vw;
+        width: 35vw;
         height: 100vh;
         display: flex;
         flex: none;
@@ -135,6 +135,8 @@ nav {
           padding: 1rem;
 
           li {
+            padding-bottom: 1.5rem;
+            font-size: 3.3rem;
             a {
               text-decoration: none;
               color: inherit;

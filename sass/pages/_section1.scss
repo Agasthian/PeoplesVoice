@@ -30,7 +30,7 @@
 
     &__text {
       position: absolute;
-      top: 33%;
+      top: 31%;
       left: 24%;
       text-align: center;
       h2 {
@@ -43,6 +43,8 @@
         font-weight: 700;
         color: $color-primary;
         z-index: 2;
+        line-height: 8rem;
+        margin-bottom: 5rem;
       }
     }
   }

@@ -75,11 +75,13 @@ html.fp-enabled {
   width: 0;
   border-width: 38.5px 34px 38.5px 0;
   border-color: transparent #fff transparent transparent;
+  filter: drop-shadow(0 0 7px #000);
 }
 .fp-controlArrow.fp-next {
   right: 50px;
   border-width: 38.5px 0 38.5px 34px;
   border-color: transparent transparent transparent #fff;
+  filter: drop-shadow(0 0 7px #333);
 }
 .fp-scrollable {
   overflow: hidden;

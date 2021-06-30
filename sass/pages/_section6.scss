@@ -52,6 +52,10 @@
         width: 100%;
         background-color: transparent;
         margin-bottom: 4rem;
+
+        &:focus {
+          outline: none;
+        }
       }
       textarea {
         height: 5rem;
