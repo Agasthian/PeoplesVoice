@@ -10,6 +10,11 @@ nav {
     position: absolute;
     left: 15rem;
     top: -2rem;
+    @include respond(small) {
+      height: 20rem;
+      left: 5rem;
+      top: -1rem;
+    }
   }
   /*Hamburger menu*/
   .hamburger_wrap {
@@ -116,6 +121,9 @@ nav {
       overflow: hidden;
       display: flex;
       align-items: center;
+      @include respond(small) {
+        width: 50%;
+      }
 
       div {
         background-color: $color-text-light;
@@ -127,6 +135,12 @@ nav {
         justify-content: center;
         transform: translateX(30vw);
         transition: all 0.4s ease;
+
+        @include respond(small) {
+          width: 50vw;
+          transform: translateX(50vw);
+        }
+
         ul {
           list-style: none;
           color: $color-secondary;

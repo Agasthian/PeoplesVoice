@@ -21,21 +21,36 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 48em) {
     html {
-      font-size: 50%; } }
+      font-size: 36%; } }
+  @media (max-width: 26.62em) {
+    html {
+      font-size: 40%; } }
+  @media (max-width: 23.4em) {
+    html {
+      font-size: 38%; } }
+  @media (max-width: 20em) {
+    html {
+      font-size: 35%; } }
+  @media (min-width: 48em) {
+    html {
+      font-size: 43%; } }
   @media (min-width: 64em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 47%; } }
   @media (min-width: 85.37em) {
     html {
       font-size: 62.5%; } }
   @media (min-width: 90em) {
     html {
-      font-size: 68.7%; } }
+      font-size: 66%; } }
   @media (min-width: 120em) {
     html {
       font-size: 87.9%; } }
+  @media (min-width: 160em) {
+    html {
+      font-size: 118.7%; } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -155,6 +170,11 @@ nav {
     position: absolute;
     left: 15rem;
     top: -2rem; }
+    @media (max-width: 26.62em) {
+      nav .logo_img {
+        height: 20rem;
+        left: 5rem;
+        top: -1rem; } }
   nav .hamburger_wrap {
     position: fixed;
     top: 4rem;
@@ -237,6 +257,9 @@ nav {
       overflow: hidden;
       display: flex;
       align-items: center; }
+      @media (max-width: 26.62em) {
+        nav .hamburger_wrap .menu {
+          width: 50%; } }
       nav .hamburger_wrap .menu div {
         background-color: #eaeaea;
         width: 35vw;
@@ -247,6 +270,10 @@ nav {
         justify-content: center;
         transform: translateX(30vw);
         transition: all 0.4s ease; }
+        @media (max-width: 26.62em) {
+          nav .hamburger_wrap .menu div {
+            width: 50vw;
+            transform: translateX(50vw); } }
         nav .hamburger_wrap .menu div ul {
           list-style: none;
           color: #231f20;
@@ -308,10 +335,21 @@ nav {
       top: 31%;
       left: 24%;
       text-align: center; }
+      @media (max-width: 26.62em) {
+        .hero-wrapper__content__text {
+          left: 0;
+          padding: 0 8rem; } }
+      @media (max-width: 23.4em) {
+        .hero-wrapper__content__text {
+          padding: 0 12rem; } }
       .hero-wrapper__content__text h2 {
         color: #eaeaea;
         font-size: 5rem;
         font-weight: 400; }
+        @media (max-width: 26.62em) {
+          .hero-wrapper__content__text h2 {
+            font-size: 6rem;
+            margin-bottom: 3rem; } }
       .hero-wrapper__content__text h2.headline {
         font-size: 8rem;
         font-weight: 700;
@@ -453,7 +491,9 @@ nav {
     justify-content: space-between; }
     .s5 .project-wrapper__text {
       text-align: center;
-      margin-top: 4rem; }
+      display: flex;
+      align-items: center;
+      height: 50%; }
       .s5 .project-wrapper__text p {
         margin-bottom: 1rem;
         line-height: 2.8rem; }

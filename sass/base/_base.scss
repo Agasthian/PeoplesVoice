@@ -10,19 +10,31 @@
 html {
   font-size: 62.5%; // 1rem = 10px;  10px/16px = 62.5%
 
-  // @include respond(tab-land) {
-  //   // width <1200px
-  //   font-size: 56.25%; //1rem = 9px;  9px/16 = 56.25%
-  // }
-
   @include respond(tab-port) {
-    //width <600px
-    font-size: 50%; //1rem = 8px;  8px/16 = 50%
+    //width <768px
+    font-size: 36%; //1rem = 5.8px;  5.8px/16 = 36%
+  }
+  @include respond(small) {
+    //width < 425px - phone large
+    font-size: 40%; //1rem = 5px;  5px/16 = 31%
+  }
+  @include respond(smaller) {
+    //width < 375px - phone
+    font-size: 38%; //1rem = 5px;  5px/16 = 31%
+  }
+  @include respond(smallest) {
+    //width < 325px - phone
+    font-size: 35%;
   }
 
   @include respond(medium) {
-    //width < 1024px
-    font-size: 56.25%; //1rem = 9px;  9px/16 = 56.25%
+    //width <768px
+    font-size: 43%; //1rem = 7px;  7px/16 = 43%
+  }
+
+  @include respond(tab-land) {
+    //width < 1024px - [ipad portrait]
+    font-size: 47%; //1rem = 7.5px;  7.5px/16 = 47%
   }
 
   @include respond(large) {
@@ -31,12 +43,16 @@ html {
   }
   @include respond(larger) {
     //width < 1440px
-    font-size: 68.7%; //1rem = 11px;  11px/16px = 68.7%
+    font-size: 66%; //1rem = 10.5px;  10.5px/16px = 66%
   }
 
   @include respond(largest) {
     //width < 1920px
     font-size: 87.9%; //1rem = 14px;  14px/16 = 87.5%
+  }
+  @include respond(ultra) {
+    //width < 2560px
+    font-size: 118.7%; //1rem = 19px;  19px/16 = 118.7%
   }
 }
 

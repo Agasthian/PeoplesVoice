@@ -33,10 +33,24 @@
       top: 31%;
       left: 24%;
       text-align: center;
+
+      @include respond(small) {
+        //width < 425px - phone large
+        left: 0;
+        padding: 0 8rem;
+      }
+      @include respond(smaller) {
+        padding: 0 12rem;
+      }
+
       h2 {
         color: $color-text-light;
         font-size: 5rem;
         font-weight: 400;
+        @include respond(small) {
+          font-size: 6rem;
+          margin-bottom: 3rem;
+        }
       }
       h2.headline {
         font-size: 8rem;

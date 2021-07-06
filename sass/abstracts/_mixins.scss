@@ -14,34 +14,41 @@ $breakpoint argument choices:
 */
 @mixin respond($breakpoint) {
   @if ($breakpoint == smallest) {
-    @media (max-width: 25em) {
-      // 400px (400px/16=37.5em)
+    @media (max-width: 20em) {
+      // 325px (325px/16=20em)
       @content;
     }
   }
 
   @if ($breakpoint == smaller) {
-    @media (max-width: 37.5em) {
-      // 600px (600/16=37.5em)
+    @media (max-width: 23.4em) {
+      // 375px (375/16=23.4em) (Phone)
       @content;
     }
   }
   @if ($breakpoint == small) {
-    @media (max-width: 48em) {
-      //768px (768px/16)
+    @media (max-width: 26.62em) {
+      // 425px (425/16=26.5em) (Phone large)
       @content;
     }
   }
   @if ($breakpoint == tab-port) {
-    @media (max-width: 56.25em) {
-      //900 (900/16)
+    @media (max-width: 48em) {
+      // 768px (768px/16) tab - inbetween
       @content;
     }
   }
 
   @if ($breakpoint == medium) {
+    @media (min-width: 48em) {
+      //768px (768px/16)
+      @content;
+    }
+  }
+
+  @if ($breakpoint == tab-land) {
     @media (min-width: 64em) {
-      //1024px (1024px/16 )
+      //1024px (1024px/16 ) - ipad -portrait
       @content;
     }
   }
@@ -62,6 +69,12 @@ $breakpoint argument choices:
 
   @if ($breakpoint == largest) {
     @media (min-width: 120em) {
+      // max-width: 1920px (1920/16)
+      @content;
+    }
+  }
+  @if ($breakpoint == ultra) {
+    @media (min-width: 160em) {
       // max-width: 1920px (1920/16)
       @content;
     }

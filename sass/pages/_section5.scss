@@ -10,7 +10,9 @@
     // text
     &__text {
       text-align: center;
-      margin-top: 4rem;
+      display: flex;
+      align-items: center;
+      height: 50%;
       p {
         margin-bottom: 1rem;
         line-height: 2.8rem;
