@@ -1,7 +1,12 @@
 .slick-prev:before,
 .slick-next:before {
-  font-size: 24px !important;
+  font-size: 2.4rem !important;
   color: $color-secondary !important;
+
+  @include respond(largest) {
+    //width < 1920px
+    font-size: 2.8rem !important;
+  }
 }
 
 .slick-next {

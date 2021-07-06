@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/*
+0-600px       :   Phone
+600-900px     :   Tablet Portrait
+900-1200px    :   Tablet Landscape
+[1200-1800] is the normal styles
+1800+         :   Big Desktops
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
 *,
 *::after,
 *::before {
@@ -8,13 +21,30 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 64em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 85.37em) {
+    html {
+      font-size: 62.5%; } }
+  @media (min-width: 90em) {
+    html {
+      font-size: 68.7%; } }
+  @media (min-width: 120em) {
+    html {
+      font-size: 87.9%; } }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box; }
+
+p {
+  font-size: 1.8rem; }
 
 h1,
 h2,
@@ -30,8 +60,12 @@ h1 {
 
 .slick-prev:before,
 .slick-next:before {
-  font-size: 24px !important;
+  font-size: 2.4rem !important;
   color: #231f20 !important; }
+  @media (min-width: 120em) {
+    .slick-prev:before,
+    .slick-next:before {
+      font-size: 2.8rem !important; } }
 
 .slick-next {
   right: -35px !important; }
@@ -117,7 +151,7 @@ nav {
   z-index: 2;
   /*Hamburger menu*/ }
   nav .logo_img {
-    height: 150px;
+    height: 15rem;
     position: absolute;
     left: 15rem;
     top: -2rem; }
@@ -134,8 +168,8 @@ nav {
       right: 0;
       z-index: 2;
       cursor: pointer;
-      width: 50px;
-      height: 50px;
+      width: 5rem;
+      height: 5rem;
       opacity: 0;
       /* Toggler Animation */
       /* Rotate On Hover When Checked */ }
@@ -162,8 +196,8 @@ nav {
       top: 0;
       right: 0;
       z-index: 1;
-      width: 60px;
-      height: 60px;
+      width: 6rem;
+      height: 6rem;
       border-radius: 50px;
       background-color: #ad974f;
       display: flex;
@@ -175,8 +209,8 @@ nav {
         position: relative;
         top: 2.8rem;
         flex: none;
-        width: 30px;
-        height: 3px;
+        width: 3rem;
+        height: 0.3rem;
         background: #eaeaea;
         display: flex;
         align-items: center;
@@ -189,7 +223,7 @@ nav {
         z-index: 1;
         top: -10px;
         width: 100%;
-        height: 3px;
+        height: 0.3rem;
         background: inherit; }
       nav .hamburger_wrap .hamburger div::after {
         top: 10px; }
@@ -387,17 +421,17 @@ nav {
     background-color: #ad974f;
     position: absolute;
     left: 61.5rem;
-    top: 2rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px; }
   .s4 .slide .section4wrapper .photo {
     background-color: #231f20;
     display: flex;
-    flex: 0 0 45%; }
+    flex: 0 0 45%;
+    flex-direction: column;
+    justify-content: center; }
     .s4 .slide .section4wrapper .photo img {
       height: 55rem;
       position: absolute;
-      top: 4rem;
       left: 18rem; }
   .s4 .slide .section4wrapper .heading {
     background-color: #e1e0e0;
@@ -442,6 +476,7 @@ nav {
       background-color: #231f20;
       color: #eaeaea;
       display: flex;
+      flex: 0 0 40%;
       flex-direction: column;
       justify-content: center;
       padding: 0px 4rem; }

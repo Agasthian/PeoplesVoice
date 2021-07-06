@@ -1,0 +1,69 @@
+//Media Query Manager
+/*
+0-600px       :   Phone
+600-900px     :   Tablet Portrait
+900-1200px    :   Tablet Landscape
+[1200-1800] is the normal styles
+1800+         :   Big Desktops
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+@mixin respond($breakpoint) {
+  @if ($breakpoint == smallest) {
+    @media (max-width: 25em) {
+      // 400px (400px/16=37.5em)
+      @content;
+    }
+  }
+
+  @if ($breakpoint == smaller) {
+    @media (max-width: 37.5em) {
+      // 600px (600/16=37.5em)
+      @content;
+    }
+  }
+  @if ($breakpoint == small) {
+    @media (max-width: 48em) {
+      //768px (768px/16)
+      @content;
+    }
+  }
+  @if ($breakpoint == tab-port) {
+    @media (max-width: 56.25em) {
+      //900 (900/16)
+      @content;
+    }
+  }
+
+  @if ($breakpoint == medium) {
+    @media (min-width: 64em) {
+      //1024px (1024px/16 )
+      @content;
+    }
+  }
+
+  @if ($breakpoint == large) {
+    @media (min-width: 85.37em) {
+      // 1366px (1366px/16)
+      @content;
+    }
+  }
+
+  @if ($breakpoint == larger) {
+    @media (min-width: 90em) {
+      //1440px (1440/16 )
+      @content;
+    }
+  }
+
+  @if ($breakpoint == largest) {
+    @media (min-width: 120em) {
+      // max-width: 1920px (1920/16)
+      @content;
+    }
+  }
+}

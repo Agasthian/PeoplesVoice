@@ -6,7 +6,7 @@ nav {
   z-index: 2;
 
   .logo_img {
-    height: 150px;
+    height: 15rem;
     position: absolute;
     left: 15rem;
     top: -2rem;
@@ -24,8 +24,8 @@ nav {
       right: 0;
       z-index: 2;
       cursor: pointer;
-      width: 50px;
-      height: 50px;
+      width: 5rem;
+      height: 5rem;
       opacity: 0;
 
       /* Toggler Animation */
@@ -68,8 +68,8 @@ nav {
       top: 0;
       right: 0;
       z-index: 1;
-      width: 60px;
-      height: 60px;
+      width: 6rem;
+      height: 6rem;
       border-radius: 50px;
       background-color: $color-primary;
       display: flex;
@@ -80,8 +80,8 @@ nav {
         position: relative;
         top: 2.8rem;
         flex: none;
-        width: 30px;
-        height: 3px;
+        width: 3rem;
+        height: 0.3rem;
         background: $color-text-light;
         display: flex;
         align-items: center;
@@ -96,7 +96,7 @@ nav {
         z-index: 1;
         top: -10px;
         width: 100%;
-        height: 3px;
+        height: 0.3rem;
         background: inherit;
       }
       /* Moves Line Down */
