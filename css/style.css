@@ -303,6 +303,9 @@ nav {
   justify-content: center;
   -webkit-box-align: center;
   align-items: center; }
+  @media (max-width: 26.62em) {
+    .sectionwrapper {
+      min-height: 50vh; } }
 
 /******* SECTION 1 ********/
 /* Nav css imported from - layout/nav.scss*/
@@ -422,8 +425,14 @@ nav {
   display: flex;
   height: 100vh;
   background-color: #eaeaea; }
+  @media (max-width: 26.62em) {
+    .s3 .about-wrapper {
+      flex-direction: column; } }
   .s3 .about-wrapper__content {
     flex: 0 0 60%; }
+    @media (max-width: 26.62em) {
+      .s3 .about-wrapper__content {
+        flex: 0 0 40%; } }
     .s3 .about-wrapper__content .aboutcontainer {
       padding: 0 7rem; }
     .s3 .about-wrapper__content__para {
@@ -435,18 +444,28 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media (max-width: 26.62em) {
+      .s3 .about-wrapper__img {
+        height: 100%; } }
     .s3 .about-wrapper__img img {
       height: 55rem;
       position: absolute;
       right: 20rem; }
+      @media (max-width: 26.62em) {
+        .s3 .about-wrapper__img img {
+          right: 8rem; } }
   .s3 .about-wrapper__goldBG {
     height: 59rem;
     width: 21rem;
     background-color: #ad974f;
     position: absolute;
-    right: 54.5rem;
+    right: 54.6rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; }
+    @media (max-width: 26.62em) {
+      .s3 .about-wrapper__goldBG {
+        height: 58rem;
+        right: 43rem; } }
 
 .s4 .slide .section4wrapper {
   width: 100%;

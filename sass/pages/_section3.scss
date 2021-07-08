@@ -6,8 +6,16 @@
     height: 100vh;
     background-color: $color-text-light;
 
+    @include respond(small) {
+      flex-direction: column;
+    }
+
     &__content {
       flex: 0 0 60%;
+
+      @include respond(small) {
+        flex: 0 0 40%;
+      }
 
       .aboutcontainer {
         padding: 0 7rem;
@@ -24,10 +32,17 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @include respond(small) {
+        height: 100%;
+      }
       img {
         height: 55rem;
         position: absolute;
         right: 20rem;
+        @include respond(small) {
+          right: 8rem;
+        }
       }
     }
 
@@ -36,9 +51,14 @@
       width: 21rem;
       background-color: #ad974f;
       position: absolute;
-      right: 54.5rem;
+      right: 54.6rem;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
+
+      @include respond(small) {
+        height: 58rem;
+        right: 43rem;
+      }
     }
   }
 }

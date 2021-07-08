@@ -15,4 +15,8 @@
   justify-content: center;
   -webkit-box-align: center;
   align-items: center;
+
+  @include respond(small) {
+    min-height: 50vh;
+  }
 }
