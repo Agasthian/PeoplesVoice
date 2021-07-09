@@ -23,6 +23,9 @@
       &__para {
         width: 70%;
         line-height: 2.8rem;
+        @include respond(small) {
+          font-size: 2rem;
+        }
       }
     }
 
@@ -41,8 +44,8 @@
         position: absolute;
         right: 20rem;
         @include respond(small) {
-          right: 8rem;
-          bottom: 8rem;
+          right: 6rem;
+          bottom: 2rem;
         }
       }
     }
@@ -57,10 +60,10 @@
       border-bottom-left-radius: 10px;
 
       @include respond(small) {
-        height: 17rem;
+        height: 14rem;
         width: 58rem;
         top: 55rem;
-        right: 6rem;
+        right: 4rem;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
       }

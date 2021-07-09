@@ -13,9 +13,17 @@
       display: flex;
       align-items: center;
       height: 50%;
+      @include respond(small) {
+        height: 70%;
+      }
+
       p {
         margin-bottom: 1rem;
         line-height: 2.8rem;
+        @include respond(small) {
+          font-size: 3.2rem;
+          line-height: 4rem;
+        }
       }
     }
     // slider
