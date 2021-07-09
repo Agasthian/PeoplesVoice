@@ -14,7 +14,7 @@
       flex: 0 0 60%;
 
       @include respond(small) {
-        flex: 0 0 40%;
+        flex: 0 0 60%;
       }
 
       .aboutcontainer {
@@ -42,6 +42,7 @@
         right: 20rem;
         @include respond(small) {
           right: 8rem;
+          bottom: 8rem;
         }
       }
     }
@@ -56,8 +57,12 @@
       border-bottom-left-radius: 10px;
 
       @include respond(small) {
-        height: 58rem;
-        right: 43rem;
+        height: 17rem;
+        width: 58rem;
+        top: 55rem;
+        right: 6rem;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
       }
     }
   }

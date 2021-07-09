@@ -15,3 +15,14 @@
 .slick-prev {
   left: -40px !important;
 }
+
+@include respond(small) {
+  .fp-controlArrow.fp-prev {
+    top: 40rem;
+    left: 0.5rem;
+  }
+  .fp-controlArrow.fp-next {
+    top: 40rem;
+    right: 0.5rem;
+  }
+}

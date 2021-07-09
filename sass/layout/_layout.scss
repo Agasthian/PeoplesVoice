@@ -17,6 +17,6 @@
   align-items: center;
 
   @include respond(small) {
-    min-height: 50vh;
+    min-height: 45vh;
   }
 }

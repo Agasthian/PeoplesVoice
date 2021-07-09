@@ -6,6 +6,10 @@
       display: flex;
       position: relative;
 
+      @include respond(small) {
+        flex-direction: column;
+      }
+
       .goldBG {
         height: 59rem;
         width: 12rem;
@@ -14,6 +18,14 @@
         left: 61.5rem;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
+        @include respond(small) {
+          left: 5rem;
+          height: 13rem;
+          width: 59rem;
+          top: 50rem;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0;
+        }
       }
 
       .photo {
@@ -23,10 +35,19 @@
         flex-direction: column;
         justify-content: center;
 
+        @include respond(small) {
+          flex: 0 1 50rem;
+        }
+
         img {
           height: 55rem;
           position: absolute;
           left: 18rem;
+
+          @include respond(small) {
+            left: 8rem;
+            top: 5rem;
+          }
         }
       }
 
@@ -37,6 +58,9 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+        @include respond(small) {
+          flex-grow: 1;
+        }
 
         h2 {
           line-height: 11rem;
