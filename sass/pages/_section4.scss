@@ -26,6 +26,10 @@
           border-bottom-left-radius: 10px;
           border-top-right-radius: 0;
         }
+        @include respond(ultra) {
+          width: 12.8rem;
+          left: 60.6rem;
+        }
       }
 
       .photo {

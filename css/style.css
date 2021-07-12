@@ -482,6 +482,10 @@ nav {
         right: 4rem;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0; } }
+    @media (min-width: 160em) {
+      .s3 .about-wrapper__goldBG {
+        width: 21.5rem;
+        right: 54rem; } }
 
 .s4 .slide .section4wrapper {
   width: 100%;
@@ -507,6 +511,10 @@ nav {
         top: 50rem;
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0; } }
+    @media (min-width: 160em) {
+      .s4 .slide .section4wrapper .goldBG {
+        width: 12.8rem;
+        left: 60.6rem; } }
   .s4 .slide .section4wrapper .photo {
     background-color: #231f20;
     display: flex;

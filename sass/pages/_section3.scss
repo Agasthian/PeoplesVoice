@@ -67,6 +67,11 @@
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
       }
+
+      @include respond(ultra) {
+        width: 21.5rem;
+        right: 54rem;
+      }
     }
   }
 }
