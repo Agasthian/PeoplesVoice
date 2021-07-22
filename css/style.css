@@ -471,7 +471,7 @@ nav {
     width: 21rem;
     background-color: #ad974f;
     position: absolute;
-    right: 54.6rem;
+    right: 40%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px; }
     @media (max-width: 26.62em) {
@@ -484,8 +484,7 @@ nav {
         border-bottom-left-radius: 0; } }
     @media (min-width: 160em) {
       .s3 .about-wrapper__goldBG {
-        width: 21.5rem;
-        right: 54rem; } }
+        width: 21.5rem; } }
 
 .s4 .slide .section4wrapper {
   width: 100%;
@@ -622,7 +621,10 @@ nav {
       width: 100%;
       flex-grow: 1; }
       .s6 .footer-wrapper__form h1 {
-        margin-bottom: 3rem; }
+        line-height: 3.5rem; }
+      .s6 .footer-wrapper__form h3 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem; }
       .s6 .footer-wrapper__form label {
         font-size: 1.6rem;
         font-weight: 400;

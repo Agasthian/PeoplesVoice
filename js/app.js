@@ -8,11 +8,13 @@
    onLeave: (origin, desitination, direction) =>{
      const section = desitination.item;
      const title = section.querySelector("h1");
+     const titleh3 = section.querySelector("h3");
      const cardwrapper = document.querySelector('.cardWrapper');
      const sectionpara = document.querySelector('.paraS3');
 
      const tl = new TimelineMax({ delay: 1 });
      tl.fromTo( title, 0.5, {y:"50", opacity:0}, {y:"0", opacity:1})
+      .fromTo( titleh3, 0.5, {y:"50", opacity:0}, {y:"0", opacity:1})
       .fromTo( sectionpara, 0.5, {opacity:0, y:40}, {opacity:1, y:0}, '-=0.5')
 
      if(desitination.index === 1){
