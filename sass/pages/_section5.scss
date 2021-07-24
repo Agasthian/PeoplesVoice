@@ -21,8 +21,11 @@
         margin-bottom: 1rem;
         line-height: 2.8rem;
         @include respond(small) {
-          font-size: 3.2rem;
+          font-size: 3rem;
           line-height: 4rem;
+        }
+        @include respond(smaller) {
+          font-size: 2.6rem;
         }
       }
     }
@@ -35,10 +38,23 @@
       align-content: center;
       justify-content: center;
 
+      @include respond(small) {
+        height: 45rem;
+      }
+
       .project-slider {
         &__img {
           img {
             width: 40rem;
+            @include respond(small) {
+              width: 44rem;
+            }
+            @include respond(smaller) {
+              width: 40rem;
+            }
+            @include respond(smallest) {
+              width: 35rem;
+            }
           }
         }
       }

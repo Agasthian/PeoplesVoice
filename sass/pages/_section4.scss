@@ -26,6 +26,12 @@
           border-bottom-left-radius: 10px;
           border-top-right-radius: 0;
         }
+        @include respond(smaller) {
+          height: 10rem;
+          width: 52rem;
+          top: 50rem;
+        }
+
         @include respond(ultra) {
           width: 12.8rem;
           left: 60.6rem;
@@ -52,6 +58,11 @@
             left: 8rem;
             top: 5rem;
           }
+          @include respond(smaller) {
+            height: 47rem;
+            left: 8rem;
+            top: 10rem;
+          }
         }
       }
 
@@ -64,6 +75,9 @@
         align-items: center;
         @include respond(small) {
           flex-grow: 1;
+        }
+        @include respond(smaller) {
+          font-size: 7rem;
         }
 
         h2 {

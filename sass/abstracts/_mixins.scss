@@ -21,8 +21,8 @@ $breakpoint argument choices:
   }
 
   @if ($breakpoint == smaller) {
-    @media (max-width: 23.4em) {
-      // 375px (375/16=23.4em) (Phone)
+    @media (max-width: 23.5em) {
+      // 375px (376/16=23.5em) (Phone)
       @content;
     }
   }

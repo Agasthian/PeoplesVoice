@@ -56,6 +56,9 @@
 
       h1 {
         line-height: 3.5rem;
+        @include respond(smallest) {
+          margin-top: 1rem;
+        }
       }
       h3 {
         font-size: 3.5rem;

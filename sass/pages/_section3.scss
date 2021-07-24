@@ -1,4 +1,4 @@
-/******* SECTION 2 ********/
+/******* SECTION 3 ********/
 /* Sectionwrapper, container imported from layout.scss*/
 .s3 {
   .about-wrapper {
@@ -15,6 +15,9 @@
 
       @include respond(small) {
         flex: 0 0 60%;
+      }
+      @include respond(smaller) {
+        flex: 0 0 65%;
       }
 
       .aboutcontainer {
@@ -39,13 +42,28 @@
       @include respond(small) {
         height: 100%;
       }
+
       img {
         height: 55rem;
         position: absolute;
         right: 20rem;
+
+        @include respond(tab-port) {
+          right: 10rem;
+        }
         @include respond(small) {
           right: 6rem;
-          bottom: 2rem;
+          bottom: 3rem;
+          border: 5px solid #ad974f;
+        }
+        @include respond(smaller) {
+          right: 7rem;
+          height: 46rem;
+        }
+        @include respond(smallest) {
+          height: 40rem;
+          right: 10rem;
+          bottom: 1rem;
         }
       }
     }
@@ -66,6 +84,7 @@
         right: 4rem;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0;
+        display: none;
       }
 
       @include respond(ultra) {
