@@ -6,6 +6,10 @@
   .cardWrapper {
     margin-top: 1rem;
 
+    @include respond(small) {
+      display: none;
+    }
+
     .services-card {
       perspective: 60rem;
       -moz-perspective: 60rem;
@@ -71,6 +75,37 @@
 
       &:hover .side--back {
         transform: rotateY(0deg);
+      }
+    }
+  }
+  .mobile-cont {
+    @include respond(medium) {
+      display: none;
+    }
+    margin-top: 2rem;
+
+    .accordion-item {
+      margin-bottom: 2rem;
+      border-radius: 7px;
+      background-color: $color-secondary;
+      color: $color-primary;
+
+      button {
+        font-size: 3.4rem;
+        font-family: Poppins;
+        background-color: $color-secondary;
+        color: $color-primary;
+        border-radius: 10px;
+        padding: 2rem;
+
+        img {
+          height: 5rem;
+          margin-right: 1rem;
+        }
+      }
+
+      .accordion-body {
+        font-size: 2.4rem;
       }
     }
   }

@@ -32,16 +32,15 @@ $breakpoint argument choices:
       @content;
     }
   }
-  @if ($breakpoint == tab-port) {
-    @media (max-width: 48em) {
-      // 768px (768px/16) tab - inbetween
+  @if ($breakpoint == medium) {
+    @media (min-width: 26.68em) {
+      //427px (427px/16)
       @content;
     }
   }
-
-  @if ($breakpoint == medium) {
-    @media (min-width: 48em) {
-      //768px (768px/16)
+  @if ($breakpoint == tab-port) {
+    @media (max-width: 48em) {
+      // 768px (768px/16) tab - inbetween
       @content;
     }
   }

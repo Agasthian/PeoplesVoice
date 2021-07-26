@@ -160,3 +160,6 @@ $('.project-slider').slick({
     // instead of a settings object
   ],
 });
+
+//import
+const bootstrap = require('bootstrap')
