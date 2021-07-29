@@ -16,6 +16,7 @@ new fullpage('#fullpage', {
   easing: 'easeInOutCubic',
   //Custom selector
   lazyLoading: true,
+  responsiveWidth: 425,
   onLeave: (origin, desitination, direction) => {
     const section = desitination.item;
     const title = section.querySelector('h1');
@@ -162,4 +163,4 @@ $('.project-slider').slick({
 });
 
 //import
-const bootstrap = require('bootstrap')
+const bootstrap = require('bootstrap');
