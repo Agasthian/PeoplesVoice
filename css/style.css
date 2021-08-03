@@ -7872,7 +7872,8 @@ nav {
 /******* SECTION 2 ********/
 /* Sectionwrapper, container imported from layout.scss*/
 .s2 {
-  background-color: #e1e0e0; }
+  background-color: #e1e0e0;
+  height: 100vh !important; }
   .s2 .cardWrapper {
     margin-top: 1rem; }
     @media (max-width: 26.62em) {
@@ -8030,7 +8031,7 @@ nav {
 
 .s4 .slide .section4wrapper {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   position: relative; }
   @media (max-width: 26.62em) {

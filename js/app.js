@@ -9,14 +9,17 @@ new fullpage('#fullpage', {
     'section5',
     'section6',
   ],
+
   //Scrolling
   scrollingSpeed: 900,
   autoScrolling: true,
   navigation: true,
   easing: 'easeInOutCubic',
   //Custom selector
-  lazyLoading: true,
+  //lazyLoading: true,
+  // Design
   responsiveWidth: 425,
+
   onLeave: (origin, desitination, direction) => {
     const section = desitination.item;
     const title = section.querySelector('h1');
