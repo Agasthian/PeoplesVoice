@@ -7555,7 +7555,7 @@ html {
       font-size: 118.7%; } }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   box-sizing: border-box; }
@@ -7937,12 +7937,13 @@ nav {
         display: none; } }
     .s2 .mobile-cont .accordion-item {
       margin-bottom: 2rem;
+      border: none;
       border-radius: 7px;
       background-color: #231f20;
       color: #ad974f; }
       .s2 .mobile-cont .accordion-item button {
         font-size: 3.4rem;
-        font-family: Poppins;
+        font-family: Manrope;
         background-color: #231f20;
         color: #ad974f;
         border-radius: 10px;
@@ -7951,7 +7952,10 @@ nav {
           height: 5rem;
           margin-right: 1rem; }
       .s2 .mobile-cont .accordion-item .accordion-body {
-        font-size: 2.4rem; }
+        font-size: 2.4rem;
+        color: #231f20;
+        background-color: #eaeaea;
+        border: none; }
 
 /******* SECTION 3 ********/
 /* Sectionwrapper, container imported from layout.scss*/
@@ -8056,16 +8060,20 @@ nav {
       @media (max-width: 26.62em) {
         .s4 .slide .section4wrapper .goldBG {
           left: 5rem;
-          height: 13rem;
-          width: 59rem;
+          height: 10rem;
+          width: 55rem;
           top: 50rem;
           border-bottom-left-radius: 10px;
           border-top-right-radius: 0; } }
       @media (max-width: 23.5em) {
         .s4 .slide .section4wrapper .goldBG {
-          height: 10rem;
-          width: 52rem;
-          top: 50rem; } }
+          height: 8rem;
+          width: 53rem;
+          top: 50rem;
+          left: 4.5rem; } }
+      @media (max-width: 20em) {
+        .s4 .slide .section4wrapper .goldBG {
+          left: 2rem; } }
       @media (min-width: 160em) {
         .s4 .slide .section4wrapper .goldBG {
           width: 12.8rem;
@@ -8085,8 +8093,12 @@ nav {
         left: 18rem; }
         @media (max-width: 26.62em) {
           .s4 .slide .section4wrapper .photo img {
-            left: 8rem;
-            top: 5rem; } }
+            position: initial;
+            width: 50rem;
+            height: 50rem;
+            margin: 0 auto;
+            margin-bottom: -15rem;
+            z-index: 0; } }
         @media (max-width: 23.5em) {
           .s4 .slide .section4wrapper .photo img {
             height: 47rem;

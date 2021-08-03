@@ -87,13 +87,14 @@
 
     .accordion-item {
       margin-bottom: 2rem;
+      border: none;
       border-radius: 7px;
       background-color: $color-secondary;
       color: $color-primary;
 
       button {
         font-size: 3.4rem;
-        font-family: Poppins;
+        font-family: Manrope;
         background-color: $color-secondary;
         color: $color-primary;
         border-radius: 10px;
@@ -107,6 +108,9 @@
 
       .accordion-body {
         font-size: 2.4rem;
+        color: $color-secondary;
+        background-color: $color-text-light;
+        border: none;
       }
     }
   }
