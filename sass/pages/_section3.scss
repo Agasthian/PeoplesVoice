@@ -25,6 +25,9 @@
         @include respond(small) {
           padding: 7rem;
         }
+        @include respond(smallest) {
+          padding: 3rem 5rem;
+        }
       }
       &__para {
         width: 70%;
@@ -64,10 +67,11 @@
           margin-top: -15rem;
           border: 5px solid #ad974f;
         }
-        // @include respond(smaller) {
-        //   right: 7rem;
-        //   height: 46rem;
-        // }
+        @include respond(smaller) {
+          height: 40rem;
+          width: 40rem;
+          margin-top: -10rem;
+        }
         // @include respond(smallest) {
         //   height: 40rem;
         //   right: 10rem;

@@ -7975,6 +7975,9 @@ nav {
       @media (max-width: 26.62em) {
         .s3 .about-wrapper__content .aboutcontainer {
           padding: 7rem; } }
+      @media (max-width: 20em) {
+        .s3 .about-wrapper__content .aboutcontainer {
+          padding: 3rem 5rem; } }
     .s3 .about-wrapper__content__para {
       width: 70%;
       line-height: 2.8rem; }
@@ -8005,6 +8008,11 @@ nav {
           margin: 0 auto;
           margin-top: -15rem;
           border: 5px solid #ad974f; } }
+      @media (max-width: 23.5em) {
+        .s3 .about-wrapper__img img {
+          height: 40rem;
+          width: 40rem;
+          margin-top: -10rem; } }
   .s3 .about-wrapper__goldBG {
     height: 59rem;
     width: 21rem;
@@ -8027,7 +8035,8 @@ nav {
         width: 21.5rem; } }
 
 .s4 {
-  height: 100vh !important; }
+  height: 100vh !important;
+  border-top: 1px #ad974f solid; }
   .s4 .slide .section4wrapper {
     width: 100%;
     height: 100vh;
