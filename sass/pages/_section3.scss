@@ -22,6 +22,9 @@
 
       .aboutcontainer {
         padding: 0 7rem;
+        @include respond(small) {
+          padding: 7rem;
+        }
       }
       &__para {
         width: 70%;
@@ -52,19 +55,30 @@
           right: 10rem;
         }
         @include respond(small) {
-          right: 6rem;
-          bottom: 3rem;
+          // right: 6rem;
+          // bottom: 3rem;
+          position: initial;
+          width: 50rem;
+          height: 50rem;
+          margin: 0 auto;
+          margin-top: -15rem;
           border: 5px solid #ad974f;
         }
-        @include respond(smaller) {
-          right: 7rem;
-          height: 46rem;
-        }
-        @include respond(smallest) {
-          height: 40rem;
-          right: 10rem;
-          bottom: 1rem;
-        }
+        // @include respond(smaller) {
+        //   right: 7rem;
+        //   height: 46rem;
+        // }
+        // @include respond(smallest) {
+        //   height: 40rem;
+        //   right: 10rem;
+        //   bottom: 1rem;
+
+        //   // position: initial;
+        //   // width: 50rem;
+        //   // height: 50rem;
+        //   // margin: 0 auto;
+        //   // margin-top: -15rem;
+        // }
       }
     }
 

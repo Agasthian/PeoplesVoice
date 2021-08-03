@@ -7757,7 +7757,7 @@ nav {
       top: 0;
       right: 0;
       width: 35%;
-      height: 100%;
+      height: 100vh;
       visibility: hidden;
       overflow: hidden;
       display: flex;
@@ -7972,6 +7972,9 @@ nav {
         flex: 0 0 65%; } }
     .s3 .about-wrapper__content .aboutcontainer {
       padding: 0 7rem; }
+      @media (max-width: 26.62em) {
+        .s3 .about-wrapper__content .aboutcontainer {
+          padding: 7rem; } }
     .s3 .about-wrapper__content__para {
       width: 70%;
       line-height: 2.8rem; }
@@ -7996,18 +7999,12 @@ nav {
           right: 10rem; } }
       @media (max-width: 26.62em) {
         .s3 .about-wrapper__img img {
-          right: 6rem;
-          bottom: 3rem;
+          position: initial;
+          width: 50rem;
+          height: 50rem;
+          margin: 0 auto;
+          margin-top: -15rem;
           border: 5px solid #ad974f; } }
-      @media (max-width: 23.5em) {
-        .s3 .about-wrapper__img img {
-          right: 7rem;
-          height: 46rem; } }
-      @media (max-width: 20em) {
-        .s3 .about-wrapper__img img {
-          height: 40rem;
-          right: 10rem;
-          bottom: 1rem; } }
   .s3 .about-wrapper__goldBG {
     height: 59rem;
     width: 21rem;
