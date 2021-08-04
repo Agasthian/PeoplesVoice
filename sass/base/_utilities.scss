@@ -11,6 +11,9 @@
 
 .slick-next {
   right: -35px !important;
+  @include respond(small) {
+    display: none !important;
+  }
 }
 .slick-prev {
   left: -40px !important;

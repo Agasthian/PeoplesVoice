@@ -7581,6 +7581,9 @@ h1, .h1 {
 
 .slick-next {
   right: -35px !important; }
+  @media (max-width: 26.62em) {
+    .slick-next {
+      display: none !important; } }
 
 .slick-prev {
   left: -40px !important; }
