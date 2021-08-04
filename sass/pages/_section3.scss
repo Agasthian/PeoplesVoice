@@ -33,6 +33,7 @@
         width: 70%;
         line-height: 2.8rem;
         @include respond(small) {
+          width: 100%;
           font-size: 2rem;
         }
       }
@@ -68,8 +69,8 @@
           border: 5px solid #ad974f;
         }
         @include respond(smaller) {
-          height: 40rem;
-          width: 40rem;
+          height: 42rem;
+          width: 41rem;
           margin-top: -10rem;
         }
         // @include respond(smallest) {

@@ -30,9 +30,9 @@
         }
         @include respond(smaller) {
           height: 8rem;
-          width: 53rem;
+          width: 54rem;
           top: 50rem;
-          left: 4.5rem;
+          left: 3rem;
         }
 
         @include respond(smallest) {

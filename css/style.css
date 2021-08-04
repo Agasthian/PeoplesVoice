@@ -7990,6 +7990,7 @@ nav {
       line-height: 2.8rem; }
       @media (max-width: 26.62em) {
         .s3 .about-wrapper__content__para {
+          width: 100%;
           font-size: 2rem; } }
   .s3 .about-wrapper__img {
     background-color: #231f20;
@@ -8017,8 +8018,8 @@ nav {
           border: 5px solid #ad974f; } }
       @media (max-width: 23.5em) {
         .s3 .about-wrapper__img img {
-          height: 40rem;
-          width: 40rem;
+          height: 42rem;
+          width: 41rem;
           margin-top: -10rem; } }
   .s3 .about-wrapper__goldBG {
     height: 59rem;
@@ -8071,9 +8072,9 @@ nav {
       @media (max-width: 23.5em) {
         .s4 .slide .section4wrapper .goldBG {
           height: 8rem;
-          width: 53rem;
+          width: 54rem;
           top: 50rem;
-          left: 4.5rem; } }
+          left: 3rem; } }
       @media (max-width: 20em) {
         .s4 .slide .section4wrapper .goldBG {
           left: 2rem; } }
