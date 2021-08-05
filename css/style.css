@@ -8066,9 +8066,9 @@ nav {
       border-bottom-right-radius: 10px; }
       @media (max-width: 26.62em) {
         .s4 .slide .section4wrapper .goldBG {
-          left: 5rem;
-          height: 10rem;
-          width: 55rem;
+          left: 9rem;
+          height: 8rem;
+          width: 47rem;
           top: 50rem;
           border-bottom-left-radius: 10px;
           border-top-right-radius: 0; } }
@@ -8101,10 +8101,10 @@ nav {
         @media (max-width: 26.62em) {
           .s4 .slide .section4wrapper .photo img {
             position: initial;
-            width: 50rem;
-            height: 50rem;
+            width: 40rem;
+            height: 40rem;
             margin: 0 auto;
-            margin-bottom: -15rem;
+            margin-bottom: -20rem;
             z-index: 0; } }
         @media (max-width: 23.5em) {
           .s4 .slide .section4wrapper .photo img {

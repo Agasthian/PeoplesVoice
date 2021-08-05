@@ -21,9 +21,9 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         @include respond(small) {
-          left: 5rem;
-          height: 10rem;
-          width: 55rem;
+          left: 9rem;
+          height: 8rem;
+          width: 47rem;
           top: 50rem;
           border-bottom-left-radius: 10px;
           border-top-right-radius: 0;
@@ -66,10 +66,10 @@
             // top: 5rem;
 
             position: initial;
-            width: 50rem;
-            height: 50rem;
+            width: 40rem;
+            height: 40rem;
             margin: 0 auto;
-            margin-bottom: -15rem;
+            margin-bottom: -20rem;
             z-index: 0;
           }
           @include respond(smaller) {
