@@ -17,6 +17,9 @@
 }
 .slick-prev {
   left: -40px !important;
+  @include respond(small) {
+    display: none !important;
+  }
 }
 
 @include respond(small) {
