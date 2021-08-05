@@ -7587,6 +7587,9 @@ h1, .h1 {
 
 .slick-prev {
   left: -40px !important; }
+  @media (max-width: 26.62em) {
+    .slick-prev {
+      display: none !important; } }
 
 @media (max-width: 26.62em) {
   .fp-controlArrow.fp-prev {
