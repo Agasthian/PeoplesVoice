@@ -51,8 +51,8 @@
         font-size: 5rem;
         font-weight: 400;
         @include respond(small) {
-          font-size: 6rem;
-          margin-bottom: 3rem;
+          font-size: 5rem;
+          margin-bottom: 1rem;
         }
       }
       h2.headline {
@@ -61,7 +61,7 @@
         color: $color-primary;
         z-index: 2;
         line-height: 8rem;
-        margin-bottom: 5rem;
+        margin-bottom: 7rem;
       }
     }
   }

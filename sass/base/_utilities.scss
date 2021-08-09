@@ -24,11 +24,12 @@
 
 @include respond(small) {
   .fp-controlArrow.fp-prev {
-    top: 40rem;
-    left: 0.5rem;
+    left: 1.6rem;
+
+    border-width: 28.5px 24px 28.5px 0;
   }
   .fp-controlArrow.fp-next {
-    top: 40rem;
-    right: 0.5rem;
+    right: 1.6rem;
+    border-width: 28.5px 0 28.5px 24px;
   }
 }

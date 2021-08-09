@@ -21,11 +21,9 @@
         margin-bottom: 1rem;
         line-height: 2.8rem;
         @include respond(small) {
-          font-size: 3rem;
-          line-height: 4rem;
-        }
-        @include respond(smaller) {
-          font-size: 2.6rem;
+          font-size: 2.4rem;
+          margin-bottom: 3rem;
+          line-height: 3.2rem;
         }
       }
     }

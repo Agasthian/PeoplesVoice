@@ -14,6 +14,13 @@
     //Change for the <button> tag
     border: none;
     cursor: pointer;
+
+    @include respond(small) {
+      font-size: 2.2rem;
+      color: #000;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
   }
 
   &:hover {

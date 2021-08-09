@@ -1,11 +1,15 @@
 .s6 {
   height: 100vh !important;
   border-top: 5px $color-primary solid;
+  @include respond(small) {
+    height: 125vh !important;
+  }
   .footer-wrapper {
     display: flex;
     height: 100vh;
     @include respond(small) {
       flex-direction: column;
+      height: 100%;
     }
     &__maps {
       background-color: $color-secondary;
@@ -21,16 +25,24 @@
 
       .info {
         width: 100%;
-        img {
-          width: 2rem;
-          margin-right: 2rem;
-          float: left;
-        }
-        p {
-          font-size: 1.4rem;
+        &_line {
           margin-bottom: 2rem;
+          img {
+            width: 2rem;
+            margin-top: 3px;
+            margin-right: 2rem;
+            float: left;
+          }
+          p {
+            font-size: 1.4rem;
+          }
           @include respond(small) {
-            font-size: 2.2rem;
+            p {
+              font-size: 2rem;
+            }
+            img {
+              width: 2.8rem;
+            }
           }
         }
       }
@@ -54,6 +66,9 @@
       background-color: $color-text-light;
       width: 100%;
       flex-grow: 1;
+      @include respond(small) {
+        padding-top: 5rem;
+      }
 
       h1 {
         line-height: 3.5rem;
@@ -71,6 +86,9 @@
         font-weight: 400;
         display: block;
         margin: 0px;
+        @include respond(small) {
+          font-size: 2rem;
+        }
       }
       input,
       textarea {

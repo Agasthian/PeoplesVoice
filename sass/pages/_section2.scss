@@ -4,6 +4,12 @@
   background-color: $color-text-dark;
   height: 100vh !important;
 
+  @include respond(small) {
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
+
   .cardWrapper {
     margin-top: 1rem;
 
@@ -35,13 +41,14 @@
 
         img {
           margin-bottom: 1rem;
-          width: 10rem;
-          height: 10rem;
+          width: 7rem;
+          height: 7rem;
         }
         h3 {
           color: $color-primary;
           font-size: 2rem;
           text-align: center;
+          font-weight: bold;
         }
 
         &--front {
@@ -93,12 +100,13 @@
       color: $color-primary;
 
       button {
-        font-size: 3.4rem;
-        font-family: Manrope;
+        font-size: 3.2rem;
         background-color: $color-secondary;
         color: $color-primary;
         border-radius: 10px;
         padding: 2rem;
+        letter-spacing: 1px;
+        font-weight: bold;
 
         img {
           height: 5rem;

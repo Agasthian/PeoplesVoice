@@ -27,6 +27,7 @@
           top: 50rem;
           border-bottom-left-radius: 10px;
           border-top-right-radius: 0;
+          display: none;
         }
         @include respond(smaller) {
           height: 8rem;
@@ -53,7 +54,7 @@
         justify-content: center;
 
         @include respond(small) {
-          flex: 0 1 50rem;
+          flex: 0 1 45rem;
         }
 
         img {
@@ -69,11 +70,14 @@
             width: 40rem;
             height: 40rem;
             margin: 0 auto;
-            margin-bottom: -20rem;
+            margin-bottom: -25rem;
             z-index: 0;
+            border: 12px solid #ad974f;
+            border-radius: 14px;
           }
           @include respond(smaller) {
-            height: 47rem;
+            height: 42rem;
+            width: 41rem;
             left: 8rem;
             top: 10rem;
           }
@@ -95,8 +99,12 @@
 
         h2 {
           line-height: 11rem;
-          font-size: 8rem;
+          font-size: 11rem;
           font-weight: 600;
+          @include respond(small) {
+            text-align: center;
+            font-size: 10rem;
+          }
         }
       }
     }

@@ -24,6 +24,10 @@
         padding: 0 7rem;
         @include respond(small) {
           padding: 7rem;
+
+          h1 {
+            text-align: center;
+          }
         }
         @include respond(smallest) {
           padding: 3rem 5rem;
@@ -34,7 +38,12 @@
         line-height: 2.8rem;
         @include respond(small) {
           width: 100%;
-          font-size: 2rem;
+          font-size: 2.4em;
+          text-align: center;
+          margin-top: 1rem;
+        }
+        @include respond(smaller) {
+          font-size: 2.2rem;
         }
       }
     }
@@ -66,12 +75,18 @@
           height: 35rem;
           margin: 0 auto;
           margin-top: -15rem;
-          border: 5px solid #ad974f;
+          position: initial;
+          width: 35rem;
+          height: 35rem;
+          margin: 0 auto;
+          margin-top: -15rem;
+          border: 12px solid #ad974f;
+          border-radius: 14px;
         }
         @include respond(smaller) {
           height: 42rem;
           width: 41rem;
-          margin-top: -10rem;
+          margin-top: -17rem;
         }
         // @include respond(smallest) {
         //   height: 40rem;
