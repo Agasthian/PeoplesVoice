@@ -166,4 +166,15 @@ $('.project-slider').slick({
 });
 
 //import
-const bootstrap = require('bootstrap');
+// const bootstrap = require('bootstrap');
+
+//Method to Auto Close hamburge nav
+document.querySelector('.hero-wrapper').addEventListener('click', () => {
+  document.querySelector('.toggler').checked = false;
+});
+document.querySelector('.s2').addEventListener('click', () => {
+  document.querySelector('.toggler').checked = false;
+});
+document.querySelector('#menu-ul').addEventListener('click', () => {
+  document.querySelector('.toggler').checked = false;
+});
