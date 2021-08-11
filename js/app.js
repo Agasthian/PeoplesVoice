@@ -1,14 +1,14 @@
 //******* FullPage.js Animation Scroll- custom script *****
 new fullpage('#fullpage', {
   //options
-  anchors: [
-    'section1',
-    'section2',
-    'section3',
-    'section4',
-    'section5',
-    'section6',
-  ],
+  // anchors: [
+  //   'section1',
+  //   'section2',
+  //   'section3',
+  //   'section4',
+  //   'section5',
+  //   'section6',
+  // ],
 
   //Scrolling
   scrollingSpeed: 900,
@@ -52,40 +52,40 @@ new fullpage('#fullpage', {
   // },
 });
 
-// **************** GSAP animation**************
-// const hero = document.querySelector('.hero-wrapper__content');
-// const slider = document.querySelector('.slider_bg');
-// const logo = document.querySelector('.logo_img');
-// const hamburger = document.querySelector('.hamburger');
-// const headline = document.querySelector('.hero-wrapper__content__text');
-// const sectionpara = document.querySelector('.paraS3');
+//**************** GSAP animation**************
+const hero = document.querySelector('.hero-wrapper__content');
+const slider = document.querySelector('.slider_bg');
+const logo = document.querySelector('.logo_img');
+const hamburger = document.querySelector('.hamburger');
+const headline = document.querySelector('.hero-wrapper__content__text');
+const sectionpara = document.querySelector('.paraS3');
 
-// const tl = new TimelineMax();
+const tl = new TimelineMax();
 
-// tl.fromTo(hero, 1, { height: '0%' }, { height: '95%', ease: Power2.easeInOut })
-//   .fromTo(
-//     hero,
-//     1.2,
-//     { width: '100%' },
-//     { width: '80%', ease: Power2.easeInOut }
-//   )
-//   .fromTo(
-//     slider,
-//     1.2,
-//     { x: '-100%' },
-//     { x: '0%', ease: Power2.easeInOut },
-//     '-=1.2'
-//   )
-//   .fromTo(logo, 0.5, { opacity: 0, y: -30 }, { opacity: 1, y: 0 }, '-=0.5')
-//   .fromTo(hamburger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
-//   .fromTo(headline, 0.5, { opacity: 0, y: 40 }, { opacity: 1, y: 0 }, '-=0.5')
-//   .fromTo(
-//     sectionpara,
-//     0.5,
-//     { opacity: 0, y: 40 },
-//     { opacity: 1, y: 0 },
-//     '-=0.5'
-//   );
+tl.fromTo(hero, 1, { height: '0%' }, { height: '95%', ease: Power2.easeInOut })
+  .fromTo(
+    hero,
+    1.2,
+    { width: '100%' },
+    { width: '80%', ease: Power2.easeInOut }
+  )
+  .fromTo(
+    slider,
+    1.2,
+    { x: '-100%' },
+    { x: '0%', ease: Power2.easeInOut },
+    '-=1.2'
+  )
+  .fromTo(logo, 0.5, { opacity: 0, y: -30 }, { opacity: 1, y: 0 }, '-=0.5')
+  .fromTo(hamburger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 }, '-=0.5')
+  .fromTo(headline, 0.5, { opacity: 0, y: 40 }, { opacity: 1, y: 0 }, '-=0.5')
+  .fromTo(
+    sectionpara,
+    0.5,
+    { opacity: 0, y: 40 },
+    { opacity: 1, y: 0 },
+    '-=0.5'
+  );
 
 // ************* Slick Library *************
 $('.cardWrapper').slick({
