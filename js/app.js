@@ -1,5 +1,5 @@
 //******* FullPage.js Animation Scroll- custom script *****
-new fullpage('#fullpage1', {
+new fullpage('#fullpage', {
   //options
   anchors: [
     'section1',
