@@ -1,9 +1,10 @@
 /******* SECTION 3 ********/
 /* Sectionwrapper, container imported from layout.scss*/
 .s3 {
+  height: 100vh;
   .about-wrapper {
     display: flex;
-    height: 100vh;
+    height: 100%;
     background-color: $color-text-light;
 
     @include respond(small) {
