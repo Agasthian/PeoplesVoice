@@ -1,9 +1,12 @@
 /*Navigation*/
 nav {
   margin: 0 3rem;
-  min-height: 10vh;
+  height: 10vh;
   position: relative;
   z-index: 2;
+  @include respond(small) {
+    height: 5vh;
+  }
 
   .logo_img {
     height: 15rem;

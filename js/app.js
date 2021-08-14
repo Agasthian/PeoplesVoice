@@ -63,7 +63,7 @@ const sectionpara = document.querySelector('.paraS3');
 
 const tl = new TimelineMax();
 
-tl.fromTo(hero, 1, { height: '0%' }, { height: '95%', ease: Power2.easeInOut })
+tl.fromTo(hero, 1, { height: '0%' }, { height: '85%', ease: Power2.easeInOut })
   .fromTo(
     hero,
     1.2,

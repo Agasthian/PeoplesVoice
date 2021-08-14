@@ -19,6 +19,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @include respond(small) {
+    height: 95vh;
+  }
 
   &__content {
     height: 60%;

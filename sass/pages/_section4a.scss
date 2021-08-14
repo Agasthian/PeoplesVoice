@@ -1,4 +1,6 @@
 .s4a {
+  border-top: 2px solid #ad974f;
+  height: 100%;
   .slide {
     &__grid-wrapper {
       height: 100vh;
@@ -31,6 +33,7 @@
         @include respond(tab-port) {
           grid-row: 3/-1;
           grid-column: 1/-1;
+          height: 100%;
         }
 
         &__heading {
@@ -51,7 +54,7 @@
               font-size: 10rem;
             }
             @include respond(smaller) {
-              font-size: 7rem;
+              line-height: 10rem;
             }
           }
         }
@@ -78,7 +81,7 @@
         img {
           width: 100%;
           height: 100%;
-          object-fit: none;
+          // object-fit: none;
         }
         @include respond(tab-port) {
           grid-row: 2/4;

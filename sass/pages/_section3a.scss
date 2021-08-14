@@ -36,6 +36,9 @@
         @include respond(tab-port) {
           width: 100%;
           padding: 0rem 5rem 5rem 5rem;
+          h1 {
+            text-align: center;
+          }
         }
       }
     }

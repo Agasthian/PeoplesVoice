@@ -45,13 +45,13 @@
           img {
             width: 40rem;
             @include respond(small) {
-              width: 44rem;
+              width: 38rem;
             }
             @include respond(smaller) {
-              width: 40rem;
+              width: 37rem;
             }
             @include respond(smallest) {
-              width: 35rem;
+              width: 34rem;
             }
           }
         }
