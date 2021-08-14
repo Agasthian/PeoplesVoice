@@ -8376,7 +8376,7 @@ nav {
     @media (max-width: 26.62em) {
       .s6 .footer-wrapper {
         flex-direction: column;
-        height: 125%; } }
+        height: 100%; } }
     .s6 .footer-wrapper__maps {
       background-color: #231f20;
       color: #eaeaea;

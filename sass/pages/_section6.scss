@@ -9,7 +9,7 @@
     height: 100vh;
     @include respond(small) {
       flex-direction: column;
-      height: 125%;
+      height: 100%;
     }
     &__maps {
       background-color: $color-secondary;
