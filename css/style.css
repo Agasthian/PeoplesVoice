@@ -7955,10 +7955,9 @@ nav {
             background-color: #333; }
           .s2 .cardWrapper .services-card .side--back h3, .s2 .cardWrapper .services-card .side--back .h3 {
             color: #231f20; }
-          .s2 .cardWrapper .services-card .side--back p {
-            text-align: center;
-            padding: 1rem;
-            font-size: 1.4rem;
+          .s2 .cardWrapper .services-card .side--back ul {
+            padding: 1rem 5rem;
+            font-size: 1.2rem;
             font-weight: 700; }
       .s2 .cardWrapper .services-card:hover .side--front {
         transform: rotateY(-180deg); }
@@ -7990,7 +7989,8 @@ nav {
         font-size: 2.4rem;
         color: #231f20;
         background-color: #eaeaea;
-        border: none; }
+        border: none;
+        padding: 1rem 4rem; }
 
 /******* SECTION 3 ********/
 /* Sectionwrapper, container imported from layout.scss*/

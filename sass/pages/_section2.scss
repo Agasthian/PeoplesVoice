@@ -68,10 +68,9 @@
           h3 {
             color: $color-secondary;
           }
-          p {
-            text-align: center;
-            padding: 1rem;
-            font-size: 1.4rem;
+          ul {
+            padding: 1rem 5rem;
+            font-size: 1.2rem;
             font-weight: 700;
           }
         }
@@ -119,6 +118,7 @@
         color: $color-secondary;
         background-color: $color-text-light;
         border: none;
+        padding: 1rem 4rem;
       }
     }
   }
