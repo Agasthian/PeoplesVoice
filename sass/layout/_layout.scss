@@ -16,7 +16,7 @@
   -webkit-box-align: center;
   align-items: center;
 
-  @include respond(small) {
+  @include respond(medium) {
     min-height: 45vh;
   }
 }

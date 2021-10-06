@@ -40,8 +40,8 @@
       left: 24%;
       text-align: center;
 
-      @include respond(small) {
-        //width < 425px - phone large
+      @include respond(medium) {
+        //width < 600px - phone large Pro
         left: 0;
         padding: 0 8rem;
       }

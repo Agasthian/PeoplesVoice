@@ -1,13 +1,13 @@
 .s6 {
   height: 100vh !important;
   border-top: 5px $color-primary solid;
-  @include respond(small) {
+  @include respond(medium) {
     height: 125vh !important;
   }
   .footer-wrapper {
     display: flex;
     height: 100vh;
-    @include respond(small) {
+    @include respond(medium) {
       flex-direction: column;
       height: 100%;
     }
@@ -19,7 +19,7 @@
       flex-direction: column;
       justify-content: center;
       padding: 0px 4rem;
-      @include respond(small) {
+      @include respond(medium) {
         flex: 0 0 50%;
       }
 
@@ -36,7 +36,7 @@
           p {
             font-size: 1.4rem;
           }
-          @include respond(small) {
+          @include respond(medium) {
             p {
               font-size: 2rem;
             }
@@ -49,13 +49,13 @@
 
       .map {
         &__desktop {
-          @include respond(small) {
+          @include respond(medium) {
             display: none;
           }
         }
         &__mobile {
           display: none;
-          @include respond(small) {
+          @include respond(medium) {
             display: block;
           }
         }
@@ -66,7 +66,7 @@
       background-color: $color-text-light;
       width: 100%;
       flex-grow: 1;
-      @include respond(small) {
+      @include respond(medium) {
         padding-top: 5rem;
       }
 
