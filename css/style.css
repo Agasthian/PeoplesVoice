@@ -7791,7 +7791,7 @@ nav {
       align-items: center; }
       @media (max-width: 26.62em) {
         nav .hamburger_wrap .menu {
-          width: 50%; } }
+          width: 55%; } }
       nav .hamburger_wrap .menu div {
         background-color: #eaeaea;
         width: 35vw;
@@ -7804,14 +7804,14 @@ nav {
         transition: all 0.4s ease; }
         @media (max-width: 26.62em) {
           nav .hamburger_wrap .menu div {
-            width: 50vw;
-            transform: translateX(50vw); } }
+            width: 55vw;
+            transform: translateX(55vw); } }
         nav .hamburger_wrap .menu div ul {
           list-style: none;
           color: #231f20;
           font-size: 2.5rem;
           font-weight: bold;
-          padding: 1rem; }
+          padding: 0 2rem 0 4rem; }
           nav .hamburger_wrap .menu div ul li {
             padding-bottom: 1.5rem;
             font-size: 3.3rem; }
@@ -7909,7 +7909,7 @@ nav {
       margin-bottom: 2rem; } }
   .s2 .cardWrapper {
     margin-top: 1rem; }
-    @media (max-width: 26.62em) {
+    @media (max-width: 37.5em) {
       .s2 .cardWrapper {
         display: none; } }
     .s2 .cardWrapper .services-card {
@@ -7965,7 +7965,7 @@ nav {
         transform: rotateY(0deg); }
   .s2 .mobile-cont {
     margin-top: 2rem; }
-    @media (max-width: 37.5em) {
+    @media (min-width: 37.6em) {
       .s2 .mobile-cont {
         display: none; } }
     .s2 .mobile-cont .accordion-item {
@@ -8096,6 +8096,10 @@ nav {
     .s3a .grid-wrapper {
       grid-template-columns: 1fr 0.15fr 3fr 0.15fr 1fr;
       grid-template-rows: 2fr 0.05fr 0.5fr 0.75fr 0.75fr; } }
+  @media (max-width: 23.5em) {
+    .s3a .grid-wrapper {
+      grid-template-columns: 1fr 0.15fr 3fr 0.15fr 1fr;
+      grid-template-rows: 2.5fr 0.05fr 0.5fr 1fr 0.75fr; } }
   .s3a .grid-wrapper .about-wrapper {
     grid-row: 1/-1;
     grid-column: 1/4;

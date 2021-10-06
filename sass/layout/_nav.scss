@@ -135,7 +135,7 @@ nav {
       display: flex;
       align-items: center;
       @include respond(small) {
-        width: 50%;
+        width: 55%;
       }
 
       div {
@@ -150,8 +150,8 @@ nav {
         transition: all 0.4s ease;
 
         @include respond(small) {
-          width: 50vw;
-          transform: translateX(50vw);
+          width: 55vw;
+          transform: translateX(55vw);
         }
 
         ul {
@@ -159,7 +159,7 @@ nav {
           color: $color-secondary;
           font-size: 2.5rem;
           font-weight: bold;
-          padding: 1rem;
+          padding: 0 2rem 0 4rem;
 
           li {
             padding-bottom: 1.5rem;

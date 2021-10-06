@@ -13,7 +13,7 @@
   .cardWrapper {
     margin-top: 1rem;
 
-    @include respond(small) {
+    @include respond(medium) {
       display: none;
     }
 
@@ -86,7 +86,7 @@
     }
   }
   .mobile-cont {
-    @include respond(medium) {
+    @include respond(tab) {
       display: none;
     }
     margin-top: 2rem;

@@ -10,10 +10,10 @@
       grid-template-columns: 1fr 0.15fr 3fr 0.15fr 1fr;
       grid-template-rows: 2fr 0.05fr 0.5fr 0.75fr 0.75fr;
     }
-    // @include respond(smallest) {
-    //   grid-template-columns: 1fr 0.15fr 3fr 0.15fr 1fr;
-    //   grid-template-rows: 2fr 0.05fr 0.5fr 0.75fr 0.75fr;
-    // }
+    @include respond(smaller) {
+      grid-template-columns: 1fr 0.15fr 3fr 0.15fr 1fr;
+      grid-template-rows: 2.5fr 0.05fr 0.5fr 1fr 0.75fr;
+    }
 
     .about-wrapper {
       grid-row: 1/-1;
