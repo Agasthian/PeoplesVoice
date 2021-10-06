@@ -7991,6 +7991,9 @@ nav {
         background-color: #eaeaea;
         border: none;
         padding: 1rem 4rem; }
+        @media (max-width: 37.5em) {
+          .s2 .mobile-cont .accordion-item .accordion-body {
+            font-size: 1.8rem; } }
 
 /******* SECTION 3 ********/
 /* Sectionwrapper, container imported from layout.scss*/
@@ -8425,12 +8428,18 @@ nav {
           padding-top: 5rem; } }
       .s6 .footer-wrapper__form h1, .s6 .footer-wrapper__form .h1 {
         line-height: 3.5rem; }
+        @media (max-width: 26.62em) {
+          .s6 .footer-wrapper__form h1, .s6 .footer-wrapper__form .h1 {
+            font-size: 3.4rem; } }
         @media (max-width: 20em) {
           .s6 .footer-wrapper__form h1, .s6 .footer-wrapper__form .h1 {
             margin-top: 1rem; } }
       .s6 .footer-wrapper__form h3, .s6 .footer-wrapper__form .h3 {
         font-size: 3.5rem;
         margin-bottom: 2rem; }
+        @media (max-width: 26.62em) {
+          .s6 .footer-wrapper__form h3, .s6 .footer-wrapper__form .h3 {
+            font-size: 2.6rem; } }
       .s6 .footer-wrapper__form label {
         font-size: 1.6rem;
         font-weight: 400;

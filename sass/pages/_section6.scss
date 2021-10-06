@@ -72,6 +72,9 @@
 
       h1 {
         line-height: 3.5rem;
+        @include respond(small) {
+          font-size: 3.4rem;
+        }
         @include respond(smallest) {
           margin-top: 1rem;
         }
@@ -79,6 +82,10 @@
       h3 {
         font-size: 3.5rem;
         margin-bottom: 2rem;
+
+        @include respond(small) {
+          font-size: 2.6rem;
+        }
       }
 
       label {
