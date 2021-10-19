@@ -7617,6 +7617,9 @@ h1, .h1 {
       color: #000;
       letter-spacing: 2px;
       font-weight: bold; } }
+  @media (max-width: 20em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 2rem; } }
 
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -7891,6 +7894,9 @@ nav {
           .hero-wrapper__content__text h2, .hero-wrapper__content__text .h2 {
             font-size: 5rem;
             margin-bottom: 1rem; } }
+        @media (max-width: 20em) {
+          .hero-wrapper__content__text h2, .hero-wrapper__content__text .h2 {
+            font-size: 4rem; } }
       .hero-wrapper__content__text h2.headline, .hero-wrapper__content__text .headline.h2 {
         font-size: 8rem;
         font-weight: 700;
@@ -7898,6 +7904,12 @@ nav {
         z-index: 2;
         line-height: 8rem;
         margin-bottom: 7rem; }
+        @media (max-width: 20em) {
+          .hero-wrapper__content__text h2.headline, .hero-wrapper__content__text .headline.h2 {
+            font-size: 5rem;
+            line-height: 5rem;
+            margin-bottom: 5rem;
+            margin-top: 3rem; } }
 
 /******* SECTION 2 ********/
 /* Sectionwrapper, container imported from layout.scss*/
@@ -8251,7 +8263,7 @@ nav {
 
 .s4a {
   border-top: 2px solid #ad974f;
-  height: 100%; }
+  height: 100vh !important; }
   .s4a .slide__grid-wrapper {
     height: 100vh;
     width: 100vw;

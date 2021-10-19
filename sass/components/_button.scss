@@ -21,6 +21,9 @@
       letter-spacing: 2px;
       font-weight: bold;
     }
+    @include respond(smallest) {
+      font-size: 2rem;
+    }
   }
 
   &:hover {

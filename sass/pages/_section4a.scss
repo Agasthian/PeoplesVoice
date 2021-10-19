@@ -1,6 +1,8 @@
 .s4a {
   border-top: 2px solid #ad974f;
-  height: 100%;
+  height: 100vh !important;
+  
+
   .slide {
     &__grid-wrapper {
       height: 100vh;
