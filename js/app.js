@@ -1,5 +1,7 @@
 //******* FullPage.js Animation Scroll- custom script *****
+var g_interval;
 new fullpage('#fullpage', {
+  licenseKey: 'GPLv3',
   //options
   anchors: [
     'home',
@@ -50,6 +52,22 @@ new fullpage('#fullpage', {
         '-=0.5'
       ).fromTo(cardwrapper, 0.5, { opacity: 0, y: 60 }, { opacity: 1, y: 0 });
     }
+
+  },
+  
+  /************Auto Slide Feature for WE HERE YOU Section (Section 4) */
+
+  afterLoad: function (origin, destination, direction) {
+    clearInterval(g_interval);
+    
+    // 1000 milliseconds lapse
+    const lapse = 3000;
+    
+    if(destination.item.querySelectorAll('.fp-slides').length){
+      g_interval = setInterval(function () {
+        fullpage_api.moveSlideRight();
+      }, lapse);
+    }
   },
 });
 
@@ -90,6 +108,10 @@ tl.fromTo(hero, 1, { height: '0%' }, { height: '85%', ease: Power2.easeInOut })
 
 // ************* Slick Library *************
 $('.cardWrapper').slick({
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  speed: 1000,
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
